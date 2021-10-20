@@ -23,16 +23,18 @@
 int find_by_dichotomy(int array[], int size_t, int value )
 {
     /* initialisation des valeurs*/
-    int pos = -1,taille = size_t-1;
+    int index = 0,min = 0, max = size_t-1;
 
     /* Recherche de la position de la valeur */
     
-    for (int i=0 ; (i<taille)&&(pos==-1) ; i++)
-        if (array[i]==value)
-            pos=i;
-    /* Edition du résultat */
-    if (pos==-1)
-        return -1;
-    else
-        return pos; 
+    while ( min <= max ) {
+        index = (min + max) / 2;
+        if (array[ index ] == value)
+            return index;
+        if ( array[ index ] < value )
+            min = index+1;
+        else
+            max = index-1;
+    }
+    return -1;
 }

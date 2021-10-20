@@ -15,7 +15,7 @@
 int main()
 {
 	int tab[10] = {1,2,3,4,5,6,7,8,9,10};
-	int result = find_by_dichotomy (tab, 10, 5);
+	int result = find_by_dichotomy (tab, 10, 11);
 	if (result == -1)
 		printf("La valeur recherchée ne se trouve pas "
             "dans le tableau.\n");
