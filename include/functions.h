@@ -8,4 +8,16 @@
  * @copyright Copyright (c) 2021
  * 
  */
+
+
+
+typedef struct
+{
+    int cost;
+    int weight;
+} Object;
+
+
 int find_by_dichotomy(int array[], int size_t, int value );
+
+Object *knapsack(Object objects[], int size, int W);
