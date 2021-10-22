@@ -41,13 +41,17 @@ int main()
 
 	Object *backpack;
 	backpack = knapsack(objects, 3, 10);
-	Object *endPtr = backpack + sizeof(backpack)/sizeof(backpack[0]);
-	while(backpack < endPtr){
-		printf("L'object w : %d, c: %d\n", backpack->weight,backpack->cost);
-		assert(backpack->weight == 6);
-		assert(backpack->cost == 7);
-		backpack++;
+	int i = 0;
+	while (backpack[i].weight != 0)
+	{
+		printf("Object poid : %d\n",backpack[i].weight);
+		i++;
 	}
+	printf("Il y a %d objets dans le sac\n",i);
+	
+	
+
+	
 	
 	
 	

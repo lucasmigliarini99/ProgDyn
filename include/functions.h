@@ -9,8 +9,6 @@
  * 
  */
 
-
-
 typedef struct
 {
     int cost;
