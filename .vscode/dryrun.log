@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/student/Desktop/tp_c/ProgDyn'
+mkdir -p output
+gcc -Wall -Wextra -g -Iinclude -c src/functions.c  -o src/functions.o
+gcc -Wall -Wextra -g -Iinclude -c src/main.c  -o src/main.o
+gcc -Wall -Wextra -g -Iinclude -o output/main src/functions.o src/main.o  
+echo Executing 'all' complete!
+make: Leaving directory '/home/student/Desktop/tp_c/ProgDyn'
+ 
+find: 'lib': No such file or directory
+ 
