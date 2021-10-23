@@ -1,5 +1,5 @@
 /**
- * @file functions.h
+ * @file knapsack.h
  * @author Lucas Migliarini (l.migliarini@eleve.leschartreux.net)
  * @brief 
  * @version 0.1
@@ -14,8 +14,5 @@ typedef struct
     int cost;
     int weight;
 } Object;
-
-
-int find_by_dichotomy(int array[], int size_t, int value );
 
 Object *knapsack(Object objects[], int size, int W);

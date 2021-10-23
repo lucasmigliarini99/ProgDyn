@@ -1,5 +1,5 @@
 /**
- * @file functions.c
+ * @file knapsack.c
  * @author Lucas Migliarini (l.migliarini@eleve.leschartreux.net)
  * @brief 
  * @version 0.1
@@ -11,33 +11,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/functions.h"
+#include "../../include/knapsack.h"
 
-/**
- * @brief Recherche par dichotomie dans un tableau d'entiers
- * @param array The array of values
- * @param size_t The size of the array
- * @param value The value to find
- * @return The position of the value found or -1
- */
-int find_by_dichotomy(int array[], int size_t, int value )
-{
-    /* initialisation des valeurs*/
-    int index = 0,min = 0, max = size_t-1;
-
-    /* Recherche de la position de la valeur */
-    
-    while ( min <= max ) {
-        index = (min + max) / 2;
-        if (array[ index ] == value)
-            return index;
-        if ( array[ index ] < value )
-            min = index+1;
-        else
-            max = index-1;
-    }
-    return -1;
-}
 
 /**
  * @brief Tris tableau selon les c/w decroissant

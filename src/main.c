@@ -11,7 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "../include/functions.h"
+#include "../include/dichotomy.h"
+#include "../include/knapsack.h"
 
 int main()
 {
