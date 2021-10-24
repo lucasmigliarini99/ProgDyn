@@ -13,4 +13,4 @@ Le code est annoté et documenté grâce à Doxygen. On peut taper la commande q
 make documentation
 ```
 ## Résultat attendus 
-Carré remplis de "#" sera afficher dans la console montrant le carré maximum qu'il peut y avoir dans la matrice ou l'on est.
+Carré remplis de "#" sera affiché dans la console montrant le carré maximum qu'il peut y avoir dans la matrice ou l'on est.
