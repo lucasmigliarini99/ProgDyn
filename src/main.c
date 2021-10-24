@@ -13,12 +13,13 @@
 #include <assert.h>
 #include "../include/dichotomy.h"
 #include "../include/knapsack.h"
+#include "../include/freeSquare.h"
 
 int main()
 {
-	///////////////////exo1///////////////////
+	printf("///////////////////exo1///////////////////\n");
 	int tab[10] = {1,2,3,4,5,6,7,8,9,10};
-	int result = find_by_dichotomy (tab, 10, 11);
+	int result = find_by_dichotomy (tab, 10, 2);
 	if (result == -1)
 		printf("La valeur recherchée ne se trouve pas "
             "dans le tableau.\n");
@@ -26,7 +27,7 @@ int main()
 		printf("La valeur se trouve à la position %d. \n",result);
 
 	
-	///////////////////exo2///////////////////
+	printf("///////////////////exo2///////////////////\n");
 
 	Object object1,object2,object3;
 	object1.cost = 7;
@@ -49,6 +50,21 @@ int main()
 		i++;
 	}
 	printf("Il y a %d objets dans le sac\n",i);
+
+	printf("///////////////////exo3///////////////////\n");
+
+	int SIZE = 12;
+
+	int **matrice = initMatrice(SIZE, 20);
+	affichageMatrice(matrice,SIZE);
+
+	printf("Affichage du carré: \n");
+
+	Coord coords = pgcb(matrice, SIZE);
+
+	newAffichageMatrice(matrice, SIZE, coords);
+
+	
 	
 	
 

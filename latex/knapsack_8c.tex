@@ -1,0 +1,68 @@
+\hypertarget{knapsack_8c}{}\doxysection{src/functions/knapsack.c File Reference}
+\label{knapsack_8c}\index{src/functions/knapsack.c@{src/functions/knapsack.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/knapsack.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{knapsack_8c_a68d7e848424a4385f054db7623a9a7de}{insertionsort}} (Object tab\mbox{[}$\,$\mbox{]}, int size)
+\begin{DoxyCompactList}\small\item\em Tris tableau selon les c/w decroissant. \end{DoxyCompactList}\item 
+Object $\ast$ \mbox{\hyperlink{knapsack_8c_acde4df37d8048ec08fc9cd83fa77216e}{knapsack}} (Object objects\mbox{[}$\,$\mbox{]}, int size, int W)
+\begin{DoxyCompactList}\small\item\em Ajoute dans le sac l\textquotesingle{}objet le plus lourd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Lucas Migliarini (\href{mailto:l.migliarini@eleve.leschartreux.net}{\texttt{ l.\+migliarini@eleve.\+leschartreux.\+net}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/10-\/20
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{knapsack_8c_a68d7e848424a4385f054db7623a9a7de}\label{knapsack_8c_a68d7e848424a4385f054db7623a9a7de}} 
+\index{knapsack.c@{knapsack.c}!insertionsort@{insertionsort}}
+\index{insertionsort@{insertionsort}!knapsack.c@{knapsack.c}}
+\doxysubsubsection{\texorpdfstring{insertionsort()}{insertionsort()}}
+{\footnotesize\ttfamily void insertionsort (\begin{DoxyParamCaption}\item[{Object}]{tab\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Tris tableau selon les c/w decroissant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of values \\
+\hline
+{\em size} & The size of the array \\
+\hline
+{\em ascending} & ascending\+: 0 or 1 for descending, asceneding \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{knapsack_8c_acde4df37d8048ec08fc9cd83fa77216e}\label{knapsack_8c_acde4df37d8048ec08fc9cd83fa77216e}} 
+\index{knapsack.c@{knapsack.c}!knapsack@{knapsack}}
+\index{knapsack@{knapsack}!knapsack.c@{knapsack.c}}
+\doxysubsubsection{\texorpdfstring{knapsack()}{knapsack()}}
+{\footnotesize\ttfamily Object$\ast$ knapsack (\begin{DoxyParamCaption}\item[{Object}]{objects\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{int}]{W }\end{DoxyParamCaption})}
+
+
+
+Ajoute dans le sac l\textquotesingle{}objet le plus lourd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of values \\
+\hline
+{\em size} & The size of the array \\
+\hline
+{\em W} & weight max backpack \\
+\hline
+\end{DoxyParams}

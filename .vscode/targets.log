@@ -1,5 +1,8 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-find: 'lib': No such file or directory
+find:  
+'lib' 
+: No such file or directory 
+
  
 # GNU Make 4.3
 # Built for x86_64-redhat-linux-gnu
@@ -8,7 +11,7 @@ find: 'lib': No such file or directory
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Oct 23 15:31:40 2021
+# Make data base, printed on Sun Oct 24 14:27:36 2021
 
 # Variables
 
@@ -17,6 +20,7 @@ GDK_BACKEND = x11
 # makefile (from 'Makefile', line 18)
 OUTPUT := output
 # environment
+ 
 LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
@@ -25,7 +29,7 @@ SRC := src
 # makefile (from 'Makefile', line 44)
 MD := mkdir -p
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ab732714-a898-472e-8522-9f37234a78e8.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c0d08114-0bee-4738-994e-d4784deb8ba2.sock
 # environment
 VSCODE_CWD = /home/student
 # makefile (from 'Makefile', line 51)
@@ -93,7 +97,7 @@ LESSOPEN = ||/usr/bin/lesspipe.sh %s
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXsQeeFr/agent.1328
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX1rF61W/agent.1348
 # default
 .SHELLFLAGS := -c
 # makefile (from 'Makefile', line 65)
@@ -115,7 +119,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2043
+VSCODE_PID = 1933
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -123,7 +127,7 @@ XDG_SESSION_TYPE = x11
 # makefile (from 'Makefile', line 48)
 INCLUDES := -Iinclude
 # environment
-SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1328,unix/unix:/tmp/.ICE-unix/1328
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1348,unix/unix:/tmp/.ICE-unix/1348
 # automatic
 *F = $(notdir $*)
 # environment
@@ -189,7 +193,7 @@ DESKTOP_SESSION = xfce
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
 # makefile (from 'Makefile', line 57)
-OBJECTS := src/functions.o src/main.o
+OBJECTS := src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -204,6 +208,7 @@ RM = rm -f
 HISTCONTROL = ignoredups
 # environment
 EDITOR = /usr/bin/nano
+ 
 # environment
 DISPLAY = :0.0
 # environment
@@ -217,9 +222,9 @@ FIXPATH = $1
 # environment
 which_declare = declare -f
 # makefile (from 'Makefile', line 39)
-SOURCEDIRS := src
+SOURCEDIRS := src src/functions
 # environment
-SSH_AGENT_PID = 1492
+SSH_AGENT_PID = 1510
 # environment
 _ = /usr/bin/make
 # environment
@@ -259,7 +264,7 @@ CC = gcc
 # makefile (from 'Makefile', line 15)
 LFLAGS = 
 # makefile (from 'Makefile', line 54)
-SOURCES := src/functions.c src/main.c
+SOURCES := src/main.c src/functions/dichotomy.c src/functions/freeSquare.c src/functions/knapsack.c
 # environment
 XDG_MENU_PREFIX = xfce-
 # environment
@@ -273,16 +278,16 @@ GDMSESSION = xfce
 
 # Directories
 
-# src (device 41, inode 26855): 6 files, no impossibilities.
+# src/functions (device 41, inode 27608): 8 files, no impossibilities.
+# src (device 41, inode 26855): 5 files, no impossibilities.
 # . (device 41, inode 26786): 9 files, no impossibilities.
 
-# 15 files, no impossibilities in 2 directories.
+# 22 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
- 
 # Files
 
 .c.o:
@@ -291,6 +296,13 @@ GDMSESSION = xfce
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 81):
 	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
+
+# Not a target:
+src/functions/dichotomy.o:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-23 15:53:00.885239148
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 Makefile:
@@ -312,7 +324,7 @@ clean:
 # Not a target:
 src/main.o:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 15:30:41.123630676
+#  Last modified 2021-10-23 16:24:39.679133673
 #  File has been updated.
 #  Successfully updated.
 
@@ -324,9 +336,10 @@ src/main.o:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2021-10-23 15:30:41.122630665
+#  Last modified 2021-10-23 16:24:39.686133741
 #  File has been updated.
 #  Successfully updated.
+ 
 #  recipe to execute (from 'Makefile', line 71):
 	$(MD) $(OUTPUT)
 
@@ -349,7 +362,7 @@ run: all
 	./$(OUTPUTMAIN)
 	@echo Executing 'run: all' complete!
 
-main: src/functions.o src/main.o
+main: src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -360,15 +373,15 @@ main: src/functions.o src/main.o
 # automatic
 # * := 
 # automatic
-# < := src/functions.o
+# < := src/main.o
 # automatic
-# + := src/functions.o src/main.o
+# + := src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o
 # automatic
 # % := 
 # automatic
-# ^ := src/functions.o src/main.o
+# ^ := src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o
 # automatic
-# ? := src/functions.o src/main.o
+# ? := src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -377,9 +390,16 @@ main: src/functions.o src/main.o
 	$(CC) $(CFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
 
 # Not a target:
-src/functions.o:
+src/functions/freeSquare.o:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-23 15:30:41.123630676
+#  Last modified 2021-10-23 16:24:00.433751899
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/functions/knapsack.o:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-23 15:53:00.887239166
 #  File has been updated.
 #  Successfully updated.
 
@@ -395,19 +415,19 @@ src/functions.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/33=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/37=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 203 B / avg = 8 B
-# current buf: size = 8162 B / used = 203 B / count = 25 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 337 B / avg = 10 B
+# current buf: size = 8162 B / used = 337 B / count = 33 / avg = 10 B
 
-# strcache performance: lookups = 46 / hit rate = 45%
+# strcache performance: lookups = 56 / hit rate = 41%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=0/46=0%
-# Finished Make data base on Sat Oct 23 15:31:40 2021
+# Load=33/8192=0%, Rehash=0, Collisions=0/56=0%
+# Finished Make data base on Sun Oct 24 14:27:36 2021
 
  

@@ -1,9 +1,11 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/student/Desktop/tp_c/ProgDyn'
 mkdir -p output
-gcc -Wall -Wextra -g -Iinclude -c src/functions.c  -o src/functions.o
 gcc -Wall -Wextra -g -Iinclude -c src/main.c  -o src/main.o
-gcc -Wall -Wextra -g -Iinclude -o output/main src/functions.o src/main.o  
+gcc -Wall -Wextra -g -Iinclude -c src/functions/dichotomy.c  -o src/functions/dichotomy.o
+gcc -Wall -Wextra -g -Iinclude -c src/functions/freeSquare.c  -o src/functions/freeSquare.o
+gcc -Wall -Wextra -g -Iinclude -c src/functions/knapsack.c  -o src/functions/knapsack.o
+gcc -Wall -Wextra -g -Iinclude -o output/main src/main.o src/functions/dichotomy.o src/functions/freeSquare.o src/functions/knapsack.o  
 echo Executing 'all' complete!
 make: Leaving directory '/home/student/Desktop/tp_c/ProgDyn'
  

@@ -1,0 +1,136 @@
+\hypertarget{free_square_8c}{}\doxysection{src/functions/free\+Square.c File Reference}
+\label{free_square_8c}\index{src/functions/freeSquare.c@{src/functions/freeSquare.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/free\+Square.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{free_square_8c_afb539f1b8487b3c386e8e4cb31344c3d}{init\+Matrice}} (int size, int obstacle)
+\begin{DoxyCompactList}\small\item\em initialisation de la matrice \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{free_square_8c_a2e6c1df5a93de2434dc1f6b9a808f9b8}{affichage\+Matrice}} (int $\ast$$\ast$matrice, int size)
+\begin{DoxyCompactList}\small\item\em Affichage de la matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{free_square_8c_abd8bbcfabb3ddef2ccaafb9928a37b95}{min}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em retourne la valeur la plus petite \end{DoxyCompactList}\item 
+Coord \mbox{\hyperlink{free_square_8c_a275f525ca8d9c94fd81cff9c4dc9b692}{find\+Max}} (int $\ast$$\ast$matrice, int size)
+\begin{DoxyCompactList}\small\item\em Trouve le plus grand carré dans la matrice. \end{DoxyCompactList}\item 
+Coord \mbox{\hyperlink{free_square_8c_a5722dc9c06d620e9c2282dc32a0ab2e1}{pgcb}} (int $\ast$$\ast$matrice, int size)
+\begin{DoxyCompactList}\small\item\em Explorer la matrice pour trouver le plus grand carré \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{free_square_8c_aa1fa26d5820636a8714ee6aefad46cb7}{new\+Affichage\+Matrice}} (int $\ast$$\ast$matrice, int size, Coord c)
+\begin{DoxyCompactList}\small\item\em Affiche la matrice finale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{free_square_8c_a2e6c1df5a93de2434dc1f6b9a808f9b8}\label{free_square_8c_a2e6c1df5a93de2434dc1f6b9a808f9b8}} 
+\index{freeSquare.c@{freeSquare.c}!affichageMatrice@{affichageMatrice}}
+\index{affichageMatrice@{affichageMatrice}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{affichageMatrice()}{affichageMatrice()}}
+{\footnotesize\ttfamily void affichage\+Matrice (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrice,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Affichage de la matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrice} & matrice \\
+\hline
+{\em size} & taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{free_square_8c_a275f525ca8d9c94fd81cff9c4dc9b692}\label{free_square_8c_a275f525ca8d9c94fd81cff9c4dc9b692}} 
+\index{freeSquare.c@{freeSquare.c}!findMax@{findMax}}
+\index{findMax@{findMax}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{findMax()}{findMax()}}
+{\footnotesize\ttfamily Coord find\+Max (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrice,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Trouve le plus grand carré dans la matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrice} & matrice \\
+\hline
+{\em size} & taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{free_square_8c_afb539f1b8487b3c386e8e4cb31344c3d}\label{free_square_8c_afb539f1b8487b3c386e8e4cb31344c3d}} 
+\index{freeSquare.c@{freeSquare.c}!initMatrice@{initMatrice}}
+\index{initMatrice@{initMatrice}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{initMatrice()}{initMatrice()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ init\+Matrice (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{obstacle }\end{DoxyParamCaption})}
+
+
+
+initialisation de la matrice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & taille du tableau \\
+\hline
+{\em obstacle} & Nombre d\textquotesingle{}obstacle dans la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{free_square_8c_abd8bbcfabb3ddef2ccaafb9928a37b95}\label{free_square_8c_abd8bbcfabb3ddef2ccaafb9928a37b95}} 
+\index{freeSquare.c@{freeSquare.c}!min@{min}}
+\index{min@{min}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily int min (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+retourne la valeur la plus petite 
+
+\begin{DoxyNote}{Note}
+~\newline
+ 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & premiere valeur \\
+\hline
+{\em b} & seconde valeur \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em } & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{free_square_8c_aa1fa26d5820636a8714ee6aefad46cb7}\label{free_square_8c_aa1fa26d5820636a8714ee6aefad46cb7}} 
+\index{freeSquare.c@{freeSquare.c}!newAffichageMatrice@{newAffichageMatrice}}
+\index{newAffichageMatrice@{newAffichageMatrice}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{newAffichageMatrice()}{newAffichageMatrice()}}
+{\footnotesize\ttfamily void new\+Affichage\+Matrice (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrice,  }\item[{int}]{size,  }\item[{Coord}]{c }\end{DoxyParamCaption})}
+
+
+
+Affiche la matrice finale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrice} & matrice \\
+\hline
+{\em size} & taille de la matrice \\
+\hline
+{\em c} & \+: Coordonnées du carré maximal \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{free_square_8c_a5722dc9c06d620e9c2282dc32a0ab2e1}\label{free_square_8c_a5722dc9c06d620e9c2282dc32a0ab2e1}} 
+\index{freeSquare.c@{freeSquare.c}!pgcb@{pgcb}}
+\index{pgcb@{pgcb}!freeSquare.c@{freeSquare.c}}
+\doxysubsubsection{\texorpdfstring{pgcb()}{pgcb()}}
+{\footnotesize\ttfamily Coord pgcb (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrice,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Explorer la matrice pour trouver le plus grand carré 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrice} & matrice \\
+\hline
+{\em size} & taille de la matrice \\
+\hline
+\end{DoxyParams}
