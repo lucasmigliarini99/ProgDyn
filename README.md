@@ -3,7 +3,7 @@
 
 *Auteurs : Lucas Migliarini*
 
-Le but de ce projet est de trouver le plan carré vide dans une matrice.
+Le but de ce projet est de trouver le plus grand carré vide dans une matrice.
 
 ## Commande `make documentation`
 
