@@ -15,10 +15,10 @@
 
 /**
  * @brief Recherche par dichotomie dans un tableau d'entiers
- * @param array The array of values
- * @param size_t The size of the array
- * @param value The value to find
- * @return The position of the value found or -1
+ * @param array tableau
+ * @param size_t taille du tableau
+ * @param value valeur à trouver
+ * @return la position ou -1 si non trouvée
  */
 int find_by_dichotomy(int array[], int size_t, int value )
 {

@@ -16,9 +16,8 @@
 
 /**
  * @brief Tris tableau selon les c/w decroissant
- * @param objects The array of values
- * @param size The size of the array
- * @param ascending ascending: 0 or 1 for descending, asceneding
+ * @param objects tableau
+ * @param size taille du tableau
  */
 
 void insertionsort(Object tab[], int size)
@@ -39,9 +38,9 @@ void insertionsort(Object tab[], int size)
 
 /**
  * @brief Ajoute dans le sac l'objet le plus lourd
- * @param objects The array of values
- * @param size The size of the array
- * @param W weight max backpack
+ * @param objects tableau
+ * @param size taille du tableau
+ * @param W poid maximal du sac
  */
 
 Object *knapsack(Object objects[], int size, int W){ 
